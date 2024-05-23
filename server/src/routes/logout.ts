@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const router = Router()
 
-router.get('/logout', (_req, res) => {
+router.get('/logout', (req, res) => {
     res.json({
         message: "GOODBYE"
     });
