@@ -10,7 +10,7 @@ router.get("/login", (req, res) => {
       throw { status: 400, message: requestBody.error.issues[0].message };
     }
     res.json({
-      message: "Hello from login route!",
+      message: "hello world!",
       data: requestBody.data,
     });
   } catch (err: any) {
