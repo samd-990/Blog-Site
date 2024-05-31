@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className={`text-center ${inter.className} text-5xl my-4`}>
         Blog Site
       </h1>
-      <form className="max-w-md mx-auto">
+      <form onSubmit={(ev) => ev.preventDefault()} className="max-w-md mx-auto">
         <div className="mb-4">
           <label
             htmlFor="blog-title"
