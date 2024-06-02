@@ -2,6 +2,8 @@ import { drizzle } from "drizzle-orm/mysql2";
 import mysql from "mysql2";
 import * as schema from "./schema";
 
+require("dotenv").config();
+
 export const connection = mysql.createConnection({
   host: process.env.DATABASE_HOST ?? "",
   user: process.env.DATABASE_USER ?? "",

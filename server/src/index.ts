@@ -1,15 +1,11 @@
-import dotenv from "dotenv";
-import loginRoutes from "./routes/login";
-import logoutRoutes from "./routes/logout";
-dotenv.config();
-
 import express from "express";
+import { setupRoutes } from "./routes/routes";
+require("dotenv").config();
 
 const app = express();
 
 app.use(express.json());
-app.use(loginRoutes);
-app.use(logoutRoutes);
+setupRoutes(app);
 
 const PORT = process.env.PORT ?? 8080;
 app.listen(PORT, () => {

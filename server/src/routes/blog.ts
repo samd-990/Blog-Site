@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { db } from "db/drizzle";
+import { db } from "../db/drizzle";
 
 const router = Router();
 
